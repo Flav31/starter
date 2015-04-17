@@ -12,14 +12,21 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "browser-sync": "^2.6.4",
     "coffeekup": "^0.3.1",
     "glob": "^5.0.5",
     "gulp-build-automation": "latest",
     "gulp-bytediff": "^0.2.1",
+    "gulp-csso": "^1.0.0",
     "gulp-insert": "^0.4.0",
     "gulp-jade": "^1.0.0",
+    "gulp-less": "^3.0.2",
     "gulp-minify-html": "^1.0.2",
     "gulp-prettify": "^0.3.0",
-    "gulp-rename": "^1.2.0"
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylus": "^2.0.1",
+    "proxy-middleware": "^0.11.0",
+    "url": "^0.10.3"
   }
 }

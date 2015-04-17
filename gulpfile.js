@@ -28,11 +28,28 @@ var defaultSettings = {
   coveragePath: './.coverage/',
   args: args,
   tslint: tslint,
-  tasks: {}
+   tasks: {
+    browserReload: {
+      files: [
+        './lib/**/*.*',
+      ],
+      options: {
+        server: {
+          baseDir: [
+            './lib/',
+          ]
+        }
+      }
+    }
+  }
 };
 
 buildAutomation.activate('cleanHtml', true);
 buildAutomation.activate('compileHtml', true);
+buildAutomation.activate('browserReload', true);
+buildAutomation.activate('watcher', true);
+buildAutomation.activate('cleanCss', true);
+buildAutomation.activate('compileCss', true);
 
 scaffoldCli.render(tasksGlob, defaultSettings);
 buildAutomation.start(defaultSettings);
@@ -50,5 +67,12 @@ gulp.task('default', [
  * html task
  */
 gulp.task('build', [
-  'compileHtml'
+  'compileHtml','compileCss'
+]);
+
+/*
+ * html task
+ */
+gulp.task('serve', [
+  'build', 'browserReload', 'watcher'
 ]);

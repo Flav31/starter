@@ -67,7 +67,7 @@ gulp.task('default', [
  * html task
  */
 gulp.task('build', [
-  'compileHtml','compileCss'
+  'compileHtml','compileCss', 'copy'
 ]);
 
 /*
@@ -76,3 +76,14 @@ gulp.task('build', [
 gulp.task('serve', [
   'build', 'browserReload', 'watcher'
 ]);
+
+
+/*
+ * html task
+ */
+gulp.task('copy', function(){
+  return gulp.src([
+    'source/img/*'
+  ])
+    .pipe(gulp.dest('./lib/img'))
+});

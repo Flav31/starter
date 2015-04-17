@@ -1,0 +1,29 @@
+{
+  "name": "gulp-build-boilerplate",
+  "private": true,
+  "version": "1.0.3",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".tmp/bower_components"
+  ],
+  "authors": [
+    "carlosmarte <opensource@carlosmarte.me>"
+  ],
+  "description": "gulp-build-boilerplate",
+  "main": "lib/",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "gulp"
+  ]
+}

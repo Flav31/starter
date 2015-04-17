@@ -1,0 +1,25 @@
+{
+  "name": "testing",
+  "version": "1.0.3",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./node_modules && npm install && gulp",
+    "test": "make Copy && gulp karmaRunner"
+  },
+  "author": "Carlos Marte <opensource@carlosmarte.me> (http://carlosmarte.me)",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "coffeekup": "^0.3.1",
+    "glob": "^5.0.5",
+    "gulp-build-automation": "latest",
+    "gulp-bytediff": "^0.2.1",
+    "gulp-insert": "^0.4.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-prettify": "^0.3.0",
+    "gulp-rename": "^1.2.0"
+  }
+}
